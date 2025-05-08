@@ -25,12 +25,12 @@ int main()
     infile.read(temp, 10);
     cout << "Initial 10 characters: " << temp << endl;
     streampos pos1 = infile.tellg();
-    cout << "Pointer location after reading first chunk: " << pos1 << endl;
+    cout << "Current position of GET pointer: " << pos1 << endl;
 
     infile.read(temp, 10);
-    cout << "Following 10 characters: " << temp << endl;
+    cout << "Next 10 characters: " << temp << endl;
     streampos pos2 = infile.tellg();
-    cout << "Pointer location after reading second chunk: " << pos2 << endl;
+    cout << "Current position of GET pointer " << pos2 << endl;
 
     infile.close();
 
